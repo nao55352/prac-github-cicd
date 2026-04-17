@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         ACTOR: ${{ github.actor }}
-        REPOSITORY-URL: ${{ github.repositoryUrl }}
+        REPOSITORY_URL: ${{ github.repositoryUrl }}
     steps:
-      - run: echo "${ ACTOR }" # githubコンテキストの参照
-      - run: echo "${ REPOSITORY-URL }"
+      - run: echo "${ACTOR}" # githubコンテキストの参照
+      - run: echo "${REPOSITORY_URL}"
